@@ -1,0 +1,180 @@
+body {
+  font-family: "Open Sans";
+}
+
+h1,
+p,
+a,
+ul,
+li,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  align-items: center;
+}
+
+header h1 {
+  color: #636060;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li + li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: #636060;
+  font-size: 1.2rem;
+}
+
+.nav a:hover {
+  color: #111111;
+}
+
+.principal {
+  background: #f6f6f8;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+}
+
+.principal-img {
+  max-width: 800px;
+  flex: 1 1 500px;
+  align-self: flex-start;
+}
+
+.principal-info {
+  flex: 1 1 400px;
+  align-self: center;
+  text-align: center;
+  margin-right: 20px;
+  padding: 30px 20px;
+}
+
+.principal-info img {
+  max-width: 120px;
+  text-align: center;
+}
+
+.principal-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.principal-info p {
+  max-width: auto;
+  font-size: 1.2rem;
+  padding-bottom: 60px;
+}
+
+.read-more-btn {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #111111;
+  padding: 10px 30px;
+  border: solid 2px #111111;
+  border-radius: 25px;
+  transition: 0.7s;
+}
+
+.read-more-btn:hover {
+  color: #ffffff;
+  border: solid 2px #636060;
+  background: #636060;
+}
+
+/* BREAD TYPE */
+
+.bread-type-bg {
+  background-image: url("/img/pao4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bread-type {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bread-type h1 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.bread-type-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+.item img {
+  max-width: 220px;
+  justify-self: center;
+}
+
+.item h2 {
+  color: #111111;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.item p {
+  max-width: 25ch;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.item a {
+  color: #111111;
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+.item a span {
+  border-bottom: solid 1px #111111;
+  padding-bottom: 3px;
+}
