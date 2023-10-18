@@ -3,6 +3,9 @@ body {
 }
 
 h1,
+h2,
+h3,
+h5,
 p,
 a,
 ul,
@@ -66,9 +69,10 @@ header h1 {
 }
 
 .principal-img {
+  display: flex;
   max-width: 800px;
   flex: 1 1 500px;
-  align-self: flex-start;
+  align-content: flex-end;
 }
 
 .principal-info {
@@ -116,7 +120,7 @@ header h1 {
 /* BREAD TYPE */
 
 .bread-type-bg {
-  background-image: url("/img/pao4.jpg");
+  background-image: url("/img/pao2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -152,12 +156,14 @@ header h1 {
 .item img {
   max-width: 220px;
   justify-self: center;
+  margin-bottom: 20px;
 }
 
 .item h2 {
   color: #111111;
   font-size: 1.25rem;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
 .item p {
@@ -177,4 +183,119 @@ header h1 {
 .item a span {
   border-bottom: solid 1px #111111;
   padding-bottom: 3px;
+}
+
+
+/* INGREDIENTS */
+
+.ingredients {
+  background: #f6f6f8;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.ingredients-text {
+  flex: 1 1 360px;
+  text-align: center;
+  align-self: center;
+  margin-left: 60px;
+  margin-right: 30px;
+}
+
+.ingredients-text h1 {
+  color: #111111;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.ingredients-text p {
+  color: #111111;
+  font-size: .875rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.ingredients-img {
+  display: flex;
+  flex: 1 1 360px;
+  justify-content: flex-end;
+}
+
+/* BREAD SPECIFICATION */
+
+.bread-specification {
+  background-image: url("/img/pao6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px;
+}
+
+.bread-specification h1 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.specification-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.specification-items {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #11111191;
+  border-radius: 8px;
+  max-width: 330px;
+  padding: 20px;
+}
+
+.specification-items h5 {
+  align-self: flex-start;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.specification-items p {
+  font-style: italic;
+  font-size: .875rem;
+}
+
+@media (max-width: 450px) {
+
+  .specification-items {
+    min-width: 250px;
+  }
+}
+
+
+/* BREAKFAST-MENU */
+
+.breakfast-menu {
+  background: #f6f6f8;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+
+}
+
+.breakfast-menu h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.breakfast-menu img {
+  max-width: 600px;
 }
