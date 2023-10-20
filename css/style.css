@@ -102,10 +102,10 @@ header h1 {
 }
 
 .read-more-btn {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #111111;
-  padding: 10px 30px;
+  padding: 15px 50px;
   border: solid 2px #111111;
   border-radius: 25px;
   transition: 0.7s;
@@ -120,7 +120,7 @@ header h1 {
 /* BREAD TYPE */
 
 .bread-type-bg {
-  background-image: url("/img/pao2.jpg");
+  background-image: url("/img/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -154,15 +154,17 @@ header h1 {
 }
 
 .item img {
-  max-width: 220px;
-  justify-self: center;
-  margin-bottom: 20px;
+  object-fit: cover;
+  width: 220px;
+  height: 195px;
+  margin: 0 auto;
 }
 
 .item h2 {
   color: #111111;
   font-size: 1.25rem;
   letter-spacing: 2px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -185,7 +187,6 @@ header h1 {
   padding-bottom: 3px;
 }
 
-
 /* INGREDIENTS */
 
 .ingredients {
@@ -206,16 +207,16 @@ header h1 {
 
 .ingredients-text h1 {
   color: #111111;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .ingredients-text p {
   color: #111111;
-  font-size: .875rem;
+  font-size: 1rem;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .ingredients-img {
@@ -227,7 +228,7 @@ header h1 {
 /* BREAD SPECIFICATION */
 
 .bread-specification {
-  background-image: url("/img/pao6.jpg");
+  background-image: url("/img/bg4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 60px;
@@ -246,7 +247,6 @@ header h1 {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  
 }
 
 .specification-items {
@@ -268,16 +268,14 @@ header h1 {
 
 .specification-items p {
   font-style: italic;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 450px) {
-
   .specification-items {
     min-width: 250px;
   }
 }
-
 
 /* BREAKFAST-MENU */
 
@@ -286,16 +284,76 @@ header h1 {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-
+  text-align: center;
 }
 
 .breakfast-menu h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
   font-weight: 400;
   text-align: center;
+  margin-bottom: 60px;
+}
+
+.breakfast-menu-img {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+@media (max-width: 750px) {
+  .breakfast-menu h1 {
+    font-size: 2.5rem;
+  }
+  .breakfast-menu-img {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 500px) {
+  .breakfast-menu h1 {
+    font-size: 2rem;
+  }
+}
+
+/* TESTIMONIALS */
+
+.testimonials-section {
+  background-image: url("/img/bg6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 60px;
+}
+
+.testimonials-section h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.testimonials-item {
+  flex: 0 1 220px;
+  background-color: #f2952d;
+  padding: 60px 30px;
+}
+
+.testimonials-item p {
+  color: #ffffff;
+  line-height: 1.7;
+  font-style: italic;
   margin-bottom: 30px;
 }
 
-.breakfast-menu img {
-  max-width: 600px;
+.testimonials-item h3 {
+  color: #ffffff;
 }
