@@ -345,6 +345,14 @@ header h1 {
   flex: 0 1 220px;
   background-color: #f2952d;
   padding: 60px 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.testimonials-item::before {
+  content: url(/img/apostofro.png);
+  position: absolute;
+  top: -30px;
 }
 
 .testimonials-item p {
@@ -356,4 +364,17 @@ header h1 {
 
 .testimonials-item h3 {
   color: #ffffff;
+}
+
+/* CONTACT FORM */
+
+.contact-bg {
+  background-image: url(/img/bg7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+}
+
+.contact-container {
+  margin: 0 150px;
 }
